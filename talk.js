@@ -8,6 +8,7 @@ const recognition = new SpeechRecognition();
 recognition.lang = "hi-IN";
 
 recognition.onstart = () => {
+  //Do something when the recorder starts to listen
 };
 
 recognition.onresult = event => {

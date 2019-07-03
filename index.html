@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Hindi Helper | Stallions</title>
+    <title>MeraType | </title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
@@ -47,11 +47,15 @@
     <section class="section">
       <div class="container is-fluid">
         <div class="heading">
-          <h2 class="content"></h2>
+          <h2 id="hindiResponse" class="content copyContent" data-clipboard-target="#hindiResponse" ></h2>
           <button class="talk button is-success">Talk</button>
       </div>
     </section>
 
     <script src="talk.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js'></script>
+    <script type="text/javascript">
+        new ClipboardJS('.copyContent');
+    </script>
   </body>
 </html>

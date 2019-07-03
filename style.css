@@ -22,7 +22,7 @@ body {
 }
 
 .heading {
-  max-width: 25rem;
+  max-width: 30rem;
   margin: auto;
 }
 
@@ -35,12 +35,12 @@ section {
   margin: auto;
   align-content: center;
   text-align: center;
-  max-width: 25rem;
+  max-width: 30rem;
 }
 
 .content {
   color: #fff;
-  max-width: 25rem;
+  max-width: 30rem;
   display: block;
   margin: auto;
   font-size: 5em;
