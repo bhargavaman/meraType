@@ -7,7 +7,7 @@
 }
 
 body {
-  height: -webkit-fill-available;
+  min-height: -webkit-fill-available;
   background: #20002c; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
