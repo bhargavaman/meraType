@@ -1,0 +1,69 @@
+* {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: -webkit-fill-available;
+  background: #20002c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #7d4992,
+    #20002c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #69387c,
+    #20002c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.heading {
+  max-width: 25rem;
+  margin: auto;
+}
+
+section {
+  align-content: center;
+  text-align: center;
+}
+
+.paragraph {
+  margin: auto;
+  align-content: center;
+  text-align: center;
+  max-width: 25rem;
+}
+
+.content {
+  color: #fff;
+  max-width: 25rem;
+  display: block;
+  margin: auto;
+  font-size: 5em;
+}
+
+.talk {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  color: rgb(230, 230, 230);
+}
+
+.subtitle {
+  color: rgb(230, 230, 230);
+}
+
+.title strong {
+  color: #fff;
+}
+
+.subtitle strong {
+  color: #fff;
+}
