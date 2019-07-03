@@ -1,0 +1,23 @@
+{
+  "name": "voicething",
+  "version": "1.0.0",
+  "description": "Typing in Hindi fucking sucks, so this little app should help. Microphone required (duhhh)",
+  "main": "talk.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhargavaman/voiceThing.git"
+  },
+  "author": "Aman Bhargava",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhargavaman/voiceThing/issues"
+  },
+  "homepage": "https://github.com/bhargavaman/voiceThing#readme",
+  "devDependencies": {
+    "eslint": "^6.0.1"
+  }
+}
