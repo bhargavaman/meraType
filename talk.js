@@ -1,9 +1,12 @@
 const btn = document.querySelector(".talk");
 const content = document.querySelector(".content");
+const historyContent = document.querySelector(".historyContent");
 
 const SpeechRecognition =
   window.SpeechRecognition || window.webkitSpeechRecognition;
 const recognition = new SpeechRecognition();
+
+let textArray = [];
 
 recognition.lang = "hi-IN";
 
@@ -16,6 +19,10 @@ recognition.onresult = event => {
 
   const transcript = event.results[currentText][0].transcript;
   content.textContent = transcript;
+
+  textArray.push(transcript);
+  historyContent.textContent = textArray;
+
   btn.classList.remove("is-loading");
   readOutLoud(transcript);
 };
