@@ -1,6 +1,7 @@
 const btn = document.querySelector(".talk");
 const content = document.querySelector(".content");
 const historyContent = document.querySelector(".historyContent");
+let tooltip = content.attributes.getNamedItem("data-tootik");
 
 const SpeechRecognition =
   window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -27,9 +28,16 @@ recognition.onresult = event => {
   readOutLoud(transcript);
 };
 
+content.addEventListener("click", () => {
+  tooltip.value = "Copied!";
+  content.attributes.setNamedItem(tooltip);
+});
+
 btn.addEventListener("click", () => {
   recognition.start();
   btn.classList.add("is-loading");
+  tooltip.value = "Click to Copy to Clipboard";
+  content.attributes.setNamedItem(tooltip);
 });
 
 function readOutLoud(message) {
